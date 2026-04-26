@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DrowsyFree — Privacy Policy / 개인정보 처리방침</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.7;
+    }
+    header {
+      background: #161b22;
+      border-bottom: 1px solid #30363d;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    header h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #58a6ff;
+    }
+    header .badge {
+      font-size: 12px;
+      background: #1f6feb;
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 12px;
+    }
+    .lang-switch {
+      margin-left: auto;
+      display: flex;
+      gap: 8px;
+    }
+    .lang-switch button {
+      background: #21262d;
+      border: 1px solid #30363d;
+      color: #8b949e;
+      padding: 4px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .lang-switch button.active {
+      background: #1f6feb;
+      border-color: #1f6feb;
+      color: #fff;
+    }
+    .container {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 24px 80px;
+    }
+    .effective {
+      font-size: 13px;
+      color: #8b949e;
+      margin-bottom: 32px;
+    }
+    .intro {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-left: 3px solid #58a6ff;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin-bottom: 40px;
+      color: #c9d1d9;
+    }
+    section {
+      margin-bottom: 36px;
+    }
+    section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #58a6ff;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #21262d;
+    }
+    .item {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+    }
+    .item h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #e6edf3;
+      margin-bottom: 6px;
+    }
+    .item p {
+      font-size: 14px;
+      color: #8b949e;
+    }
+    .text-body {
+      font-size: 14px;
+      color: #8b949e;
+      white-space: pre-line;
+    }
+    footer {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 16px 20px;
+      font-size: 13px;
+      color: #8b949e;
+      font-style: italic;
+      margin-top: 40px;
+    }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .lang-content { display: none; }
+    .lang-content.visible { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DrowsyFree</h1>
+    <span class="badge">Privacy Policy</span>
+    <div class="lang-switch">
+      <button class="active" onclick="switchLang('en')">English</button>
+      <button onclick="switchLang('ko')">한국어</button>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- ===== ENGLISH ===== -->
+    <div id="en" class="lang-content visible">
+      <p class="effective">Effective Date: April 26, 2026</p>
+      <div class="intro">
+        DrowsyFree (the "App") takes your privacy seriously and operates its privacy policy as described below.
+      </div>
+
+      <section>
+        <h2>1. Information We Collect</h2>
+        <div class="item">
+          <h3>📷 Camera Access</h3>
+          <p>Used solely for drowsiness detection through face and eye recognition. Camera footage is not transmitted to servers and is processed in real time on-device, then immediately discarded.</p>
+        </div>
+        <div class="item">
+          <h3>📍 GPS Location</h3>
+          <p>Used for vehicle speed display and driving/stopping detection. Location data is processed in real time on-device and is not stored or transmitted to servers.</p>
+        </div>
+        <div class="item">
+          <h3>🎙 Microphone Access</h3>
+          <p>Used for voice recognition (STT) in the AI companion feature. Recorded voice is processed on-device and is not transmitted to external servers.</p>
+        </div>
+        <div class="item">
+          <h3>🎬 Event Clip Storage</h3>
+          <p>When a drowsiness event occurs, a front snapshot and rear video are saved to the device's internal storage. They are not uploaded to servers.</p>
+        </div>
+        <div class="item">
+          <h3>🔑 Google Account Information</h3>
+          <p>When using the social login feature, your Google account email and profile photo are stored in Firebase Authentication.</p>
+        </div>
+        <div class="item">
+          <h3>🔐 Gemini API Key</h3>
+          <p>The API key you enter is stored unencrypted in the device's SharedPreferences. It is not transmitted externally, but please take care in storing it on your device.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. Information We Do Not Collect</h2>
+        <p class="text-body">• Facial photos or biometric data (no server transfer/storage)
+• Contacts, messages, or call history
+• Driving routes or movement records</p>
+      </section>
+
+      <section>
+        <h2>3. Purpose of Use</h2>
+        <p class="text-body">Collected information is used only for the following purposes:
+• Drowsiness, yawning, and distraction detection and alerts
+• GPS-based vehicle speed display and driving/stopping state detection
+• Firebase error analysis (Crashlytics) — only de-identified app error information is collected</p>
+      </section>
+
+      <section>
+        <h2>4. Third-Party Services</h2>
+        <div class="item">
+          <h3>Google Firebase</h3>
+          <p>Authentication, Crashlytics, Analytics, and Remote Config are used. <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> applies.</p>
+        </div>
+        <div class="item">
+          <h3>Google Gemini API</h3>
+          <p>If you have entered an API key, AI companion conversation content is transmitted to the Google Generative Language API. Transmitted content: voice recognition text + previous conversation context.</p>
+        </div>
+        <div class="item">
+          <h3>Google ML Kit</h3>
+          <p>Face recognition is processed entirely on-device. It is not transmitted to external servers.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>5. Data Retention and Deletion</h2>
+        <p class="text-body">• Settings data: Automatically deleted when app is uninstalled
+• Firebase account: Deletable via in-app account deletion or Firebase Console</p>
+      </section>
+
+      <section>
+        <h2>6. Children's Privacy</h2>
+        <p class="text-body">This app is not intended for children under the age of 14. We do not intentionally collect personal information from children.</p>
+      </section>
+
+      <section>
+        <h2>7. Privacy Officer</h2>
+        <p class="text-body">Email: <a href="mailto:ad.pyeon@gmail.com">ad.pyeon@gmail.com</a>
+For privacy-related inquiries, please contact us at the above email.</p>
+      </section>
+
+      <section>
+        <h2>8. Policy Changes</h2>
+        <p class="text-body">If this policy changes, you will be notified through app updates and in-app announcements.</p>
+      </section>
+
+      <footer>
+        ⚠️ This app is an assistive tool that detects drowsiness while driving and provides alerts. We do not guarantee 100% detection of all drowsiness situations. The driver bears final responsibility for safe driving.
+      </footer>
+    </div>
+
+    <!-- ===== 한국어 ===== -->
+    <div id="ko" class="lang-content">
+      <p class="effective">시행일: 2026년 4월 26일</p>
+      <div class="intro">
+        DrowsyFree 앱(이하 "앱")은 사용자의 개인정보를 중요하게 여기며, 아래와 같이 개인정보 처리방침을 수립·운영합니다.
+      </div>
+
+      <section>
+        <h2>1. 수집하는 정보</h2>
+        <div class="item">
+          <h3>📷 카메라 접근권한</h3>
+          <p>얼굴·눈 인식을 통한 졸음 감지 목적으로만 사용됩니다. 카메라 영상은 서버로 전송되지 않으며, 기기 내에서 실시간 처리 후 즉시 폐기됩니다.</p>
+        </div>
+        <div class="item">
+          <h3>📍 GPS 위치 정보</h3>
+          <p>차량 속도 표시 및 주행·정차 감지 목적으로 사용됩니다. 위치 데이터는 기기 내에서 실시간 처리되며 서버에 저장·전송되지 않습니다.</p>
+        </div>
+        <div class="item">
+          <h3>🎙 마이크 접근권한</h3>
+          <p>AI 말동무 기능에서 음성 인식(STT)에 사용됩니다. 녹음된 음성은 기기 내에서 처리되며 외부 서버로 전송되지 않습니다.</p>
+        </div>
+        <div class="item">
+          <h3>🎬 이벤트 클립 저장</h3>
+          <p>졸음 이벤트 발생 시 전면 스냅샷과 후면 동영상이 기기 내부 저장소에 저장됩니다. 서버에는 업로드되지 않습니다.</p>
+        </div>
+        <div class="item">
+          <h3>🔑 Google 계정 정보</h3>
+          <p>소셜 로그인 기능 이용 시 Google 계정의 이메일·프로필 사진이 Firebase Authentication에 저장됩니다.</p>
+        </div>
+        <div class="item">
+          <h3>🔐 Gemini API 키</h3>
+          <p>사용자가 직접 입력한 API 키는 기기의 SharedPreferences에 암호화 없이 저장됩니다. 외부로 전송되지 않으나 기기 내 보관에 주의하세요.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. 수집하지 않는 정보</h2>
+        <p class="text-body">• 얼굴 사진 또는 생체 인식 데이터의 서버 전송/저장
+• 연락처, 문자, 통화 내역
+• 주행 경로 또는 이동 기록</p>
+      </section>
+
+      <section>
+        <h2>3. 정보의 이용 목적</h2>
+        <p class="text-body">수집된 정보는 오직 다음 목적으로만 이용됩니다:
+• 졸음·하품·주의분산 감지 및 경고
+• GPS 기반 속도 표시 및 주행·정차 상태 감지
+• Firebase 오류 분석(Crashlytics) — 비식별 처리된 앱 오류 정보만 수집</p>
+      </section>
+
+      <section>
+        <h2>4. 제3자 서비스</h2>
+        <div class="item">
+          <h3>Google Firebase</h3>
+          <p>Authentication, Crashlytics, Analytics, Remote Config가 사용됩니다. <a href="https://policies.google.com/privacy" target="_blank">Google의 개인정보처리방침</a>이 적용됩니다.</p>
+        </div>
+        <div class="item">
+          <h3>Google Gemini API</h3>
+          <p>사용자가 API 키를 입력한 경우, AI 말동무 대화 내용이 Google Generative Language API로 전송됩니다. 전송되는 내용: 사용자의 음성 인식 텍스트 + 이전 대화 컨텍스트.</p>
+        </div>
+        <div class="item">
+          <h3>Google ML Kit</h3>
+          <p>얼굴 인식은 기기 온디바이스(On-Device)에서 처리됩니다. 외부 서버로 전송되지 않습니다.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>5. 데이터 보관 및 삭제</h2>
+        <p class="text-body">• 설정 데이터: 앱 삭제 시 자동 삭제
+• Firebase 계정: 앱 내 계정 삭제 기능 또는 Firebase Console을 통해 삭제 가능</p>
+      </section>
+
+      <section>
+        <h2>6. 어린이 개인정보 보호</h2>
+        <p class="text-body">본 앱은 만 14세 미만 아동을 대상으로 하지 않습니다. 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+      </section>
+
+      <section>
+        <h2>7. 개인정보 보호책임자</h2>
+        <p class="text-body">이메일: <a href="mailto:ad.pyeon@gmail.com">ad.pyeon@gmail.com</a>
+문의: 개인정보 관련 문의사항은 위 이메일로 연락주시기 바랍니다.</p>
+      </section>
+
+      <section>
+        <h2>8. 방침 변경</h2>
+        <p class="text-body">본 방침이 변경될 경우 앱 업데이트 및 앱 내 공지를 통해 안내드립니다.</p>
+      </section>
+
+      <footer>
+        ⚠️ 본 앱은 운전 중 졸음을 감지하여 경고를 제공하는 보조 도구입니다. 앱이 모든 졸음 상황을 100% 감지한다고 보장하지 않습니다. 안전 운전의 최종 책임은 운전자에게 있습니다.
+      </footer>
+    </div>
+
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('visible'));
+      document.getElementById(lang).classList.add('visible');
+      document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
